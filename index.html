@@ -10,19 +10,67 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: hsl(212, 45%, 89%); 
+      display: flex; 
+      align-content: center; 
+      justify-content: center;
+    }
+    .karta {
+      margin-top: 5%;
+      font-size: 11px;
+      text-align: center;
+      width: 300px; 
+      height: 500px; 
+      background-color: white; 
+      border: 15px black;
+      border-radius: 25px;
+      overflow: hidden;
+    }
+    .karta img {
+      width: 300px; 
+      height: fit-content; 
+      padding: 5%;
+      border-radius: 28px;
+    }
+    .karta h1 {
+      color: hsl(218, 44%, 22%);
+      font-family: 'Outfit';
+      font-style: normal;
+      font-weight: 700;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .karta p {
+      color: hsl(216, 15%, 48%);
+      font-family: 'Outfit';
+      font-style: normal;
+      font-size: 15px;
+      font-weight: 400;
+      padding-top: 10px;
+      padding-bottom: 20px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
   </style>
 </head>
 <body>
+    <div class="karta">
+    <img src="images/image-qr-code.png">
+    <h1>Improve your front-end skills by building projects</h1>
 
-  Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
   </div>
+
+  
 </body>
 </html>
